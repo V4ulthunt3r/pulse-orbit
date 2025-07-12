@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum | Pulse Orbit</title>
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pulseblue: '#00cfff',
+            pulsepurple: '#a259ff',
+            pulsedark: '#0a0a1a',
+          },
+          fontFamily: {
+            orbit: ['Orbitron', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-pulsedark text-white flex flex-col justify-between">
+  <main class="max-w-2xl mx-auto py-12 px-4">
+    <h1 class="text-4xl font-orbit font-bold text-pulseblue mb-6">Impressum</h1>
+    <p class="text-gray-300 mb-4">
+      Peter Hildel<br>
+      Gustav-Adolf-Str. 19<br>
+      90513 Zirndorf, Germany
+    </p>
+    <p class="text-gray-300 mb-4">
+      Kontakt<br>
+      Email: <a href="mailto:info@hildel.com" class="text-pulseblue hover:underline">info@hildel.com</a>
+    </p>
+    <a href="index.html" class="inline-block mt-8 text-pulseblue hover:underline">Zurück zur Startseite</a>
+  </main>
+  <footer class="bg-pulsedark/80 border-t border-pulsepurple py-8 mt-12">
+    <div class="max-w-2xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-6">
+        <a href="support.html" class="text-pulseblue hover:underline">Support</a>
+        <a href="privacy.html" class="text-pulseblue hover:underline">Datenschutzerklärung</a>
+        <a href="impressum.html" class="text-pulseblue hover:underline">Impressum</a>
+      </div>
+      <div class="text-center text-xs text-gray-500 mt-8">&copy; 2025 Pulse Orbit</div>
+    </div>
+  </footer>
+</body>
+</html> 
