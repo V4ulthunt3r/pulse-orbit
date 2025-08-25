@@ -24,19 +24,50 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
 </head>
 <body class="min-h-screen bg-pulsedark text-white flex flex-col justify-between">
-  <main class="max-w-2xl mx-auto py-12 px-4">
-    <h1 class="text-4xl font-orbit font-bold text-pulseblue mb-6">Legal Notice</h1>
-    <p class="text-gray-300 mb-4">
-      Peter Hildel<br>
-      Gustav-Adolf-Str. 19<br>
-      90513 Zirndorf, Germany
-    </p>
-    <p class="text-gray-300 mb-4">
-      Contact<br>
-      Email: <a href="mailto:info@hildel.com" class="text-pulseblue hover:underline">info@hildel.com</a>
-    </p>
-    <a href="index-en.html" class="inline-block mt-8 text-pulseblue hover:underline">Back to Homepage</a>
+  <main class="max-w-4xl mx-auto py-12 px-4">
+    <h1 class="text-4xl font-orbit font-bold text-pulseblue mb-8 text-center">Legal Notice</h1>
+    
+    <!-- Information Section -->
+    <section class="bg-pulsedark/80 border border-pulsepurple rounded-xl p-6 mb-6 shadow-lg">
+      <h2 class="text-2xl font-orbit font-bold text-pulsepurple mb-4 flex items-center gap-2">👤 Information according to § 5 TMG</h2>
+      <p class="text-gray-200 mb-4">
+        <span class="font-semibold text-pulseblue">Peter Hildel</span><br>
+        Gustav-Adolf-Str. 19<br>
+        90513 Zirndorf, Germany
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-pulsedark/80 border border-pulseblue rounded-xl p-6 mb-6 shadow-lg">
+      <h2 class="text-2xl font-orbit font-bold text-pulseblue mb-4 flex items-center gap-2">📧 Contact</h2>
+      <p class="text-gray-200">
+        E-Mail: <a href="mailto:info@hildel.com" class="text-pulseblue hover:text-pulsepurple underline">info@hildel.com</a>
+        <!-- optional: <br>Phone: [+49 ...] -->
+      </p>
+    </section>
+
+    <!-- VAT Section -->
+    <section class="bg-pulsedark/80 border border-pulsepurple rounded-xl p-6 mb-6 shadow-lg">
+      <h2 class="text-2xl font-orbit font-bold text-pulsepurple mb-4 flex items-center gap-2">💰 Value Added Tax</h2>
+      <p class="text-gray-200">
+        Note: Exempt from VAT according to § 19 UStG (small business regulation).
+      </p>
+    </section>
+
+    <!-- Consumer Dispute Resolution Section -->
+    <section class="bg-pulsedark/80 border border-pulseblue rounded-xl p-6 mb-6 shadow-lg">
+      <h2 class="text-2xl font-orbit font-bold text-pulseblue mb-4 flex items-center gap-2">⚖️ Consumer Dispute Resolution</h2>
+      <p class="text-gray-200">
+        Consumer dispute resolution/Universal arbitration board:<br>
+        We are neither obligated nor willing to participate in dispute resolution procedures before a consumer arbitration board.
+      </p>
+    </section>
+
+    <div class="text-center mt-8">
+      <a href="index-en.html" class="inline-block px-8 py-3 rounded-full bg-pulseblue text-pulsedark font-bold text-lg shadow-lg hover:bg-pulsepurple hover:text-white transition">Back to Homepage</a>
+    </div>
   </main>
+
   <footer class="bg-pulsedark/80 border-t border-pulsepurple py-8 mt-12">
     <div class="max-w-2xl mx-auto px-4">
       <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-6">
