@@ -22,6 +22,13 @@
       },
     }
   </script>
+  <style>
+    @media (min-width: 768px) {
+      .responsive-margin-top {
+        margin-top: -10rem !important;
+      }
+    }
+  </style>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
 </head>
 <body class="min-h-screen bg-pulsedark text-white flex flex-col justify-between">
@@ -35,7 +42,8 @@
 
     <!-- Cosmic Intro Section -->
     <section class="max-w-xl w-full mx-auto mb-8 bg-pulsedark/80 border border-pulsepurple rounded-xl p-6 shadow-lg text-center">
-      <h2 class="text-2xl font-orbit font-bold text-pulsepurple mb-2 flex items-center justify-center gap-2">🚀 Pulse Orbit – <span class="text-pulseblue">Your pulse counts. Your orbit decides.</span></h2>
+      <h2 class="text-2xl font-orbit font-bold text-pulsepurple mb-2 text-center">🚀 Pulse Orbit</h2>
+      <h3 class="text-xl font-orbit font-bold text-pulseblue mb-2 text-center">Your pulse counts. Your orbit decides.</h3>
       <p class="text-gray-200">Dive into the cosmic hell of gravity!<br>In Pulse Orbit, you pilot a nimble spaceship through dangerous orbits. With a finger tap, you switch between orbit and thrust – but beware: asteroids, laser traps, and bizarre bosses lurk everywhere.</p>
     </section>
 
@@ -61,11 +69,14 @@
     <!-- Availability Section -->
     <section class="max-w-xl w-full mx-auto mb-8 bg-pulsedark/80 border border-pulseblue rounded-xl p-6 shadow-lg text-center">
       <h3 class="text-xl font-bold text-pulseblue mb-4 flex items-center gap-2">📱 Available for iOS</h3>
-      <p class="text-gray-200 mb-2">Currently in TestFlight – be one of the first test pilots and fly through the orbit hell!</p>
-      <ul class="text-gray-200 space-y-1 mb-2">
-        <li>👉 Join now & give feedback!</li>
-        <li>🧪 TestFlight link on request – just contact us via <a href="mailto:info@hildel.com" class="underline text-pulseblue hover:text-pulsepurple">info@hildel.com</a></li>
-      </ul>
+      <div class="flex flex-col items-center space-y-2">
+        <a href="https://apps.apple.com/de/app/pulse-orbit/id6745799094" target="_blank" rel="noopener noreferrer">
+          <img src="appstore_pulseorbit.png" alt="App Store Pulse Orbit" class="w-full h-auto drop-shadow-lg hover:opacity-80 transition-opacity responsive-margin-top" style="margin-top: -6rem;" />
+        </a>
+        <a href="https://apps.apple.com/de/app/pulse-orbit/id6745799094" target="_blank" rel="noopener noreferrer">
+          <img src="qr_pulseorbit.png" alt="QR Code Pulse Orbit" class="w-full h-auto drop-shadow-lg hover:opacity-80 transition-opacity responsive-margin-top" style="margin-top: -6rem; margin-bottom: -2rem;" />
+        </a>
+      </div>
     </section>
 
     <!-- Call to Action -->
