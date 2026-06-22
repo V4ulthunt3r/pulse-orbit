@@ -19,6 +19,9 @@
     tailwind.config = {
       theme: {
         extend: {
+          screens: {
+            xs: '480px',
+          },
           colors: {
             pulseblue: '#00cfff',
             pulsepurple: '#a259ff',
@@ -178,6 +181,7 @@
       border-radius: 28%;
     }
     @keyframes float { 0%,100% { transform: translate(-50%, -52%);} 50% { transform: translate(-50%, -48%);} }
+    @keyframes floatY { 0%,100% { transform: translateY(0);} 50% { transform: translateY(-12px);} }
 
     .orbit-rocket-wrap {
       position: absolute;
@@ -206,7 +210,7 @@
       background: linear-gradient(160deg, #1b1b2e, #0a0a16);
       border: 1px solid rgba(255,255,255,0.12);
       box-shadow: 0 30px 70px rgba(0,0,0,0.6), 0 0 60px rgba(162,89,255,0.18);
-      animation: float 7s ease-in-out infinite;
+      animation: floatY 7s ease-in-out infinite;
     }
     .phone img { width: 100%; border-radius: 32px; display: block; }
     .phone::before {
@@ -404,9 +408,8 @@
           </div>
           <div class="flex flex-col items-center gap-3">
             <a href="https://apps.apple.com/de/app/pulse-orbit/id6745799094" target="_blank" rel="noopener noreferrer" class="block p-3 bg-white rounded-2xl shadow-lg hover:scale-105 transition-transform">
-              <div class="w-36 h-36 overflow-hidden flex justify-end rounded-lg">
-                <img src="qr_pulseorbit.png" alt="QR code – Pulse Orbit on the App Store" class="h-full w-auto max-w-none">
-              </div>
+              <div class="w-36 h-36 rounded-lg bg-no-repeat" role="img" aria-label="QR code – Pulse Orbit on the App Store"
+                   style="background-image:url('qr_pulseorbit.png'); background-size:384px 192px; background-position:-204px -24px;"></div>
             </a>
             <span class="text-gray-400 text-sm">Scan &amp; play</span>
           </div>
